@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    font-family: Inter, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.headbar {
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    background-color: beige;
+    color: brown;
+}
+
+.headBar_title{
+    margin: 0;
+}
+
+main {
+    max-width: 1000px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input_section h2 {
+    text-align: center;
+    color: brown;
+}
+
+.search_section h2 {
+    text-align: center;
+    color: brown;
+}
+
+input, button{
+    font-size: 15px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 12px;
+    margin: 5px 0;
+    width: 90%;  
+}
+
+.input {
+    margin-top: 10px;
+}
+.input label {
+    color: brown;
+    font-weight: bold;
+    
+}
+
+.input input{
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.input_inline {
+    margin: 14px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input_inline label {
+    margin-right: 12px;
+    color: brown;
+    font-weight: bold;
+}
+
+.input_section > form > button {
+    background-color: beige;
+    color: brown;
+    display: block;
+    border: 0;
+    border-radius: 5px;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+    /* font-weight: bold; */
+}
+
+button > span {
+    font-weight: bold;
+}
+
+.search_section form{
+    padding: 16px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto 1fr 0.5fr ;
+    grid-gap: 10px;
+}
+
+.search_section form label{
+    display: flex;
+    align-items: center;
+}
+
+.search_section form input{
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.search_section form button{
+    background-color: beige;
+    color: brown;
+    padding: 8px;
+    border: 0;
+    border-radius: 4px;    
+    cursor: pointer;
+}
+
+.book_shelf h2 {
+    color: brown;
+}
+
+.book_list {
+    padding: 5px;
+    border: none;
+}
+
+.book_item {
+    padding: 10px 16px;
+    border: 2px solid burlywood;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.book_item > h3, p {
+    margin: 5px 0;
+}
+
+.action button{
+    border: 0;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0 4px 0 0;
+    cursor: pointer;
+}
+
+.action .finish_btn{
+    background-color: darkgreen;
+    color: white;
+}
+
+.action .delete_btn{
+    background-color: darkred;
+    color: white;
+}
+
+.action .unfinished_btn {
+    background-color: purple;
+    color: white;
+}
+
+.action .edit_btn{
+    background-color: darkcyan;
+    color: white;
+}
